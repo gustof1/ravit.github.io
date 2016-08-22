@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url('font-awesome.css');
 /*
 
 	Style.css
@@ -21,40 +24,21 @@
 
 /* ==================== 01. Basics ==================== */
 body {
-	
-	font-family: "Source Sans Pro","Segoe UI","Droid Sans",Tahoma,Arial,sans-serif;
-	
+  font-family:'Roboto', Arial, sans-serif;
 	font-size: 13px;
-	
 	font-weight: 400;
-	
 	line-height: 25px;
-	
-	
-
 }
-
-
-
 p {
-	
 	margin-bottom: 25px;
-	
-
 }
-
-
-
-
 a{
 	color:inherit;
 	text-decoration:none
 }
-
 a:hover{
 	color:#111
 }
-
 a,a i,a i:hover,a:hover,button,button:hover,input[type=submit],input[type=submit]:hover{
 	-webkit-transition:all .2s;
 	-moz-transition:all .2s;
@@ -62,59 +46,47 @@ a,a i,a i:hover,a:hover,button,button:hover,input[type=submit],input[type=submit
 	-o-transition:all .2s;
 	transition:all .2s
 }
-
 i{
 	cursor:default
 }
-
 a i{
 	cursor:pointer
 }
-
 .ol{
 	list-style-type:decimal-leading-zero;
 	list-style-position:outside;
 	margin-left:2em;
 	margin-bottom:25px
 }
-
 .ol ol,.ul ol{
 	list-style-type:decimal-leading-zero;
 	list-style-position:outside
 }
-
 .ul{
 	list-style-type:disc;
 	list-style-position:outside;
 	margin-left:1em;
 	margin-bottom:25px
 }
-
 .ol ul,.ul ul{
 	list-style-type:disc;
 	list-style-position:outside
 }
-
 .ol ol,.ol ul,.ul ol,.ul ul{
 	margin-left:2em
 }
-
 .italic,em{
 	font-style:italic
 }
-
 .bold,b,strong{
 	font-weight:600
 }
-
 .thin{
 	font-weight:300
 }
-
 .x-thin{
 	font-weight:100
 }
-
 .serif{
 	font-family: "Source Sans Pro","Segoe UI","Droid Sans",Tahoma,Arial,sans-serif;
 	font-style:italic;
@@ -122,7 +94,6 @@ a i{
 	letter-spacing:0;
 	text-transform:none
 }
-
 .uber{
 	font-family: "Source Sans Pro","Segoe UI","Droid Sans",Tahoma,Arial,sans-serif;
 	font-style:normal;
@@ -130,7 +101,6 @@ a i{
 	letter-spacing:.08em;
 	text-transform:uppercase
 }
-
 .text-color{
 	color:#ff4800
 }
@@ -514,7 +484,7 @@ a.arrow-link:hover,a.arrow-link:hover:before{
 
 .overlay-item{
 	position:relative;
-	color:#fff;	
+	color:#fff;
 	line-height:0;
 	-webkit-transition:all .2s;
 	-moz-transition:all .2s;
@@ -747,7 +717,7 @@ a.arrow-link:hover,a.arrow-link:hover:before{
 
 .menu ul li{
 	float:left;
-	border-right:0px solid #1a1b1a; 
+	border-right:0px solid #1a1b1a;
 }
 
 .menu ul li:hover a{
@@ -1677,49 +1647,70 @@ a.socialIcon:hover, .socialHoverClass {
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
 }
-#header { 
 
-			background:url(../img/header.png) 50% 0 fixed;
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+	filter:alpha(opacity=80);
+	-moz-filter: 0.5;
+	-webkit-filter: blur(5px);
+}
+.stopfade {
+   opacity: 0.5;
+}
+
+#header {
+background: url('img/video/bac.jpg') no-repeat;
 		    -webkit-background-size: cover;
     		-moz-background-size: cover;
     		-o-background-size: cover;
     		background-size: cover;
-			margin: 0 auto; 
-		    width: 100%; 
-		    position: relative; 
+			margin: 0 auto;
+		    width: 100%;
+		    position: relative;
 		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 		    padding:280px 0;
 		    height: auto;
+
 		}
-#service { 
+#service {
 			background: url(../img/servicios.png) 50% 0 fixed;
 			-webkit-background-size: cover;
     		-moz-background-size: cover;
     		-o-background-size: cover;
     		background-size: cover;
     		height: auto;
-			margin: 0 auto; 
-		    width: 100%; 
-		    position: relative; 
+			margin: 0 auto;
+		    width: 100%;
+		    position: relative;
 		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 		    padding: 100px 0;
 		}
-#Productos { 
-			background: url(../img/productos.jpg) 50% 0 fixed; 
+#Productos {
+			background: url(../img/productos.jpg) 50% 0 fixed;
 			height: auto;
-			margin: 0 auto; 
-		    width: 100%; 
-		    position: relative; 
+			margin: 0 auto;
+		    width: 100%;
+		    position: relative;
 		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 		    padding: 100px 0;
 		    color: #fff;
 		}
-#negocios { 
-			background: url(../img/productos.jpg) 50% 0 fixed; 
+#portafolio {
+		background-color: #fff;
 			height: auto;
-			margin: 0 auto; 
-		    width: 100%; 
-		    position: relative; 
+			margin: 0 auto;
+		    width: 100%;
+		    position: relative;
 		    padding: 100px 0;
 		    color: #fff;
 		}
