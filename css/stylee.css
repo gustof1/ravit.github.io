@@ -131,10 +131,9 @@ blockquote{
 	font-style:italic;
 	font-weight:400;
 	font-size:1.25em;
-	padding:25px;
-	background:#fafafa;
-	border-left:5px solid #eee;
-	margin-bottom:25px
+	padding:15px;
+	border-left:1px;
+	margin-bottom:5px
 }
 
 blockquote small{
@@ -1649,6 +1648,8 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
+
+
 video {
     position:absolute;
     top: 50%;
@@ -1669,45 +1670,7 @@ video {
    opacity: 0.5;
 }
 
-.service-single{
-    margin-top: 30px;
-  padding-bottom: 10px;
-  border: 1px solid #e8e8e8;
-  box-shadow: 0 0 10px #e8e8e8;
-}
-.service-single .box-top{
-  background: #1569C7;
-  padding: 30px;
-  color: #fff;
-}
-.service-single .box-top i{
-  font-size: 50px;
-  padding: 20px 0;
-}
-.service-single .box-top h2{
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-bottom: 45px;
-}
-.service-single .box-down{
-  max-width: 350px;
-  margin: 0 auto;
-  border-radius: 100%;
-  background: #242424;
-  margin-top: -50px;
-  padding: 50px 25px 10px 25px;
-}
-.service-single .btn-holly{
-	background: #1a1b1a;
-	border:1px solid #111;
-	border-radius: 20px;
-	color: #fff;
-}
-.service-single .btn-holly:hover{
-	background: #1569C7;
-	border-color: #1569C7;
-	color: #fff;
-}
+
 
 #header {
 			background: url('img/video/bac.jpg') no-repeat;
@@ -1734,21 +1697,19 @@ video {
 		    
 		}
 #Productos {
-			background: url(../img/productos.jpg) 50% 0 fixed;
+			background-color: #f4f4f4;
 			height: auto;
 			margin: 0 auto;
 		    width: 100%;
 		    position: relative;
 		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 		    padding: 100px 0;
-		    color: #fff;
 		}
-#portafolio {
-		background-color: #fff;
+#portfolio {
+		background-color: #242424;
 			height: auto;
 			margin: 0 auto;
 		    width: 100%;
 		    position: relative;
 		    padding: 100px 0;
-		    color: #fff;
 		}
