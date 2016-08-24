@@ -1650,7 +1650,7 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 video {
-    position: fixed;
+    position:absolute;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -1669,8 +1669,48 @@ video {
    opacity: 0.5;
 }
 
+.service-single{
+    margin-top: 30px;
+  padding-bottom: 10px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 0 10px #e8e8e8;
+}
+.service-single .box-top{
+  background: #1569C7;
+  padding: 30px;
+  color: #fff;
+}
+.service-single .box-top i{
+  font-size: 50px;
+  padding: 20px 0;
+}
+.service-single .box-top h2{
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+.service-single .box-down{
+  max-width: 350px;
+  margin: 0 auto;
+  border-radius: 100%;
+  background: #242424;
+  margin-top: -50px;
+  padding: 50px 25px 10px 25px;
+}
+.service-single .btn-holly{
+	background: #1a1b1a;
+	border:1px solid #111;
+	border-radius: 20px;
+	color: #fff;
+}
+.service-single .btn-holly:hover{
+	background: #1569C7;
+	border-color: #1569C7;
+	color: #fff;
+}
+
 #header {
-background: url('img/video/bac.jpg') no-repeat;
+			background: url('img/video/bac.jpg') no-repeat;
 		    -webkit-background-size: cover;
     		-moz-background-size: cover;
     		-o-background-size: cover;
@@ -1681,20 +1721,17 @@ background: url('img/video/bac.jpg') no-repeat;
 		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 		    padding:280px 0;
 		    height: auto;
-
 		}
 #service {
-			background: url(../img/servicios.jpg) 50% 0 fixed;
-			-webkit-background-size: cover;
-    		-moz-background-size: cover;
-    		-o-background-size: cover;
-    		background-size: cover;
+			background-color: #242424;
+			
     		height: auto;
 			margin: 0 auto;
 		    width: 100%;
 		    position: relative;
 		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-		    padding: 100px 0;
+			padding: 100px 0;
+		    
 		}
 #Productos {
 			background: url(../img/productos.jpg) 50% 0 fixed;
@@ -1715,40 +1752,3 @@ background: url('img/video/bac.jpg') no-repeat;
 		    padding: 100px 0;
 		    color: #fff;
 		}
-
-		/* Non-essential demo stuff */
-		.hero-unit {
-			background-color: #fff;
-		    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-		}
-		.media-object { width: 64px; height: 64px; padding-bottom: 30px }
-		.navbar-brand {
-				font-size: 24px;
-			}
-
-			.navbar-container {
-				padding: 20px 0 20px 0;
-			}
-
-			.navbar.navbar-fixed-top.fixed-theme {
-				background-color: #222;
-				border-color: #080808;
-				box-shadow: 0 0 5px rgba(0,0,0,.8);
-			}
-
-			.navbar-brand.fixed-theme {
-				font-size: 18px;
-			}
-
-			.navbar-container.fixed-theme {
-				padding: 0;
-			}
-
-			.navbar-brand.fixed-theme,
-			.navbar-container.fixed-theme,
-			.navbar.navbar-fixed-top.fixed-theme,
-			.navbar-brand,
-			.navbar-container{
-				transition: 0.8s;
-				-webkit-transition:  0.8s;
-			}
